@@ -58,7 +58,7 @@ class BookmarksController < ApplicationController
       )
       
       # return error message with 403 HTTP status if there's no such user
-      return render(json: { message: 'Invalid User' }, status: 403) unless @current_user
+      render(json: { message: 'Invalid User' }, status: 403) unless @current_user
     end
 
 end

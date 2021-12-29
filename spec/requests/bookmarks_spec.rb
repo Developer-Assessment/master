@@ -144,7 +144,7 @@ describe 'GET /bookmarks' do
   end
 end
 
-describe 'GET /bookmarks' do
+describe 'GET /bookmarks/id' do
   let!(:bookmark) { Bookmark.create(url: 'https://rubyyagi.com', title: 'Ruby Yagi') }
 
   # create a user before the test scenarios are run
